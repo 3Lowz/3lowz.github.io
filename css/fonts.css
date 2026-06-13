@@ -1,0 +1,13 @@
+/* ============================================================
+   3Lowz — Webfonts
+   SUBSTITUTION NOTE: the original site shipped no custom fonts
+   (default Bootstrap system stack). These Google Fonts were
+   chosen to give the brand a deliberate engineering voice:
+     • Space Grotesk — distinctive technical display
+     • IBM Plex Sans  — readable engineering body
+     • IBM Plex Mono  — code / labels / metadata
+   Swap these @font-face/@import targets if self-hosted files
+   are preferred.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');

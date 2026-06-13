@@ -1,0 +1,45 @@
+/* ============================================================
+   3Lowz — Effects tokens
+   Elevation shadows tuned for dark surfaces, the signature teal
+   glow, glass blur, focus ring, grain texture, and motion easings.
+   ============================================================ */
+
+:root {
+  /* elevation (dark: shadows are deep + a faint top hairline of light) */
+  --shadow-xs:  0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow-sm:  0 2px 8px rgba(0, 0, 0, 0.45);
+  --shadow-md:  0 8px 24px rgba(0, 0, 0, 0.50);
+  --shadow-lg:  0 18px 50px rgba(0, 0, 0, 0.55);
+  --shadow-xl:  0 30px 80px rgba(0, 0, 0, 0.60);
+
+  /* inner top-light hairline that reads as a raised edge on dark */
+  --edge-light: inset 0 1px 0 rgba(244, 248, 248, 0.05); /* @kind shadow */
+
+  /* teal glow halos */
+  --glow-sm: 0 0 0 1px rgba(45, 212, 189, 0.25), 0 4px 18px rgba(45, 212, 189, 0.18);
+  --glow-md: 0 0 24px rgba(45, 212, 189, 0.28);
+  --glow-lg: 0 0 48px rgba(45, 212, 189, 0.35);
+
+  /* focus ring */
+  --focus-ring: 0 0 0 3px rgba(45, 212, 189, 0.35);
+
+  /* glass */
+  --blur-glass: saturate(140%) blur(14px); /* @kind other */
+  --blur-soft:  blur(6px); /* @kind other */
+
+  /* motion — easings */
+  /* decisive settle */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);     /* @kind other */
+  --ease-in-out:cubic-bezier(0.65, 0, 0.35, 1);    /* @kind other */
+  /* subtle overshoot */
+  --ease-spring:cubic-bezier(0.34, 1.56, 0.64, 1); /* @kind other */
+
+  /* motion — durations */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   200ms; /* @kind other */
+  --dur-slow:   360ms; /* @kind other */
+  --dur-slower: 600ms; /* @kind other */
+
+  /* hairline grid texture (subtle technical backdrop) */
+  --grid-line: rgba(244, 248, 248, 0.025); /* @kind color */
+}

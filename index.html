@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3Lowz — Senior Software Engineer</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<style>
+  html { scroll-behavior: smooth; }
+  .app-main {
+    margin-left: var(--sidebar-w);
+    min-height: 100vh;
+  }
+  .placeholder {
+    padding: var(--space-10) var(--space-9);
+    max-width: 62rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .placeholder .big {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: var(--text-2xl); color: var(--text-primary); margin: var(--space-3) 0 var(--space-2);
+  }
+  .placeholder .sub {
+    font-family: var(--font-mono); font-size: var(--text-sm); color: var(--text-muted); letter-spacing: 0.04em;
+  }
+  .sec-divider { height: 1px; background: var(--border-subtle); margin: 0 var(--space-9); }
+  @media (max-width: 860px) {
+    .app-main { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="app.bundle.js" defer></script>
+</body>
+</html>

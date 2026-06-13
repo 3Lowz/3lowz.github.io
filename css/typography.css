@@ -1,0 +1,50 @@
+/* ============================================================
+   3Lowz — Typography tokens
+   Space Grotesk (display) · IBM Plex Sans (body) · IBM Plex Mono
+   (labels, eyebrows, metadata). Mono is used uppercase + tracked
+   as the developer "signature" voice on eyebrows and tags.
+   ============================================================ */
+
+:root {
+  /* families */
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-sans:    'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* weights */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* type scale (rem, 16px root) */
+  --text-xs:   0.75rem;   /* 12 */
+  --text-sm:   0.875rem;  /* 14 */
+  --text-base: 1rem;      /* 16 */
+  --text-md:   1.125rem;  /* 18 */
+  --text-lg:   1.375rem;  /* 22 */
+  --text-xl:   1.75rem;   /* 28 */
+  --text-2xl:  2.25rem;   /* 36 */
+  --text-3xl:  3rem;      /* 48 */
+  --text-4xl:  4rem;      /* 64 */
+  --text-5xl:  5.5rem;    /* 88 — hero wordmark */
+
+  /* line heights */
+  --leading-none:  1;
+  --leading-tight: 1.12;
+  --leading-snug:  1.3;
+  --leading-body:  1.62;
+
+  /* letter spacing */
+  --tracking-tight:   -0.02em;
+  --tracking-display: -0.03em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;
+  --tracking-eyebrow: 0.22em;   /* uppercase mono eyebrows */
+
+  /* semantic roles */
+  --font-eyebrow: var(--font-mono);
+  --font-heading: var(--font-display);
+  --font-body:    var(--font-sans);
+  --font-code:    var(--font-mono);
+}

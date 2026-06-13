@@ -1,0 +1,82 @@
+/* ============================================================
+   3Lowz — Color tokens
+   Dark, engineering-grade palette. Deep near-black surfaces with
+   a slight cool undertone, a refined teal signal accent (evolved
+   from the original site's lightseagreen), and a calm neutral
+   text ramp. Imagery is monochrome / high-contrast B&W.
+   ============================================================ */
+
+:root {
+  /* --- Ink: background & surface ramp (cool near-black) --- */
+  --ink-1000: #060809;   /* page void / deepest */
+  --ink-900:  #0a0e10;   /* base background */
+  --ink-850:  #0e1316;   /* sunken */
+  --ink-800:  #12191c;   /* surface / card */
+  --ink-700:  #182125;   /* raised surface */
+  --ink-600:  #1f2c31;   /* hover surface */
+  --ink-500:  #29393f;   /* strong border / divider */
+  --ink-400:  #3a4e55;   /* disabled fill */
+
+  /* --- Neutral text ramp --- */
+  --white:    #f4f8f8;
+  --slate-100:#e6edee;
+  --slate-200:#c2cdcf;
+  --slate-300:#94a3a6;
+  --slate-400:#6c7b7f;
+  --slate-500:#4d5a5e;
+
+  /* --- Teal: the signal accent --- */
+  --teal-200: #8df4e2;
+  --teal-300: #5fe9d2;
+  --teal-400: #2dd4bd;   /* primary accent */
+  --teal-500: #16b6a0;
+  --teal-600: #0e8e7e;
+  --teal-700: #0a6256;
+  --teal-tint:  rgba(45, 212, 189, 0.12);  /* soft accent wash */
+  --teal-tint2: rgba(45, 212, 189, 0.22);
+  --teal-glow:  rgba(45, 212, 189, 0.40);  /* halo / glow */
+
+  /* --- Semantic status hues (muted, dark-friendly) --- */
+  --green-400:  #46d18a;
+  --amber-400:  #f0b54a;
+  --red-400:    #f06b72;
+  --blue-400:   #56b1f0;
+
+  /* ---------- Semantic aliases ---------- */
+  --bg-void:        var(--ink-1000);
+  --bg-base:        var(--ink-900);
+  --bg-sunken:      var(--ink-850);
+  --surface:        var(--ink-800);
+  --surface-raised: var(--ink-700);
+  --surface-hover:  var(--ink-600);
+  --surface-glass:  rgba(18, 25, 28, 0.66);
+
+  --text-primary:   var(--slate-100);
+  --text-secondary: var(--slate-300);
+  --text-muted:     var(--slate-400);
+  --text-faint:     var(--slate-500);
+  --text-on-accent: #04221d;          /* ink text on teal fills */
+
+  --border-subtle:  rgba(244, 248, 248, 0.08);
+  --border-default: rgba(244, 248, 248, 0.13);
+  --border-strong:  var(--ink-500);
+
+  --accent:         var(--teal-400);
+  --accent-bright:  var(--teal-300);
+  --accent-strong:  var(--teal-500);
+  --accent-soft:    var(--teal-tint);
+  --accent-soft-2:  var(--teal-tint2);
+  --accent-glow:    var(--teal-glow);
+
+  --success:        var(--green-400);
+  --warning:        var(--amber-400);
+  --danger:         var(--red-400);
+  --info:           var(--blue-400);
+
+  --ring:           rgba(45, 212, 189, 0.55);   /* focus ring */
+
+  /* gradient signatures */
+  --grad-accent: linear-gradient(120deg, var(--teal-300) 0%, var(--teal-500) 100%); /* @kind color */
+  --grad-text:   linear-gradient(100deg, var(--white) 0%, var(--teal-300) 120%); /* @kind color */
+  --grad-edge:   linear-gradient(180deg, rgba(45,212,189,0.5), rgba(45,212,189,0)); /* @kind color */
+}
