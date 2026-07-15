@@ -17,8 +17,9 @@ window.RESUME = {
       { name: 'Python', icon: 'devicon-python-plain', level: 98 },
       { name: 'PHP', icon: 'devicon-php-plain', level: 76 },
       { name: 'Go', icon: 'devicon-go-original-wordmark', level: 85 },
+      { name: 'Java', icon: 'devicon-java-plain', level: 65 },
     ]},
-    { group: 'Others (personal)', items: [
+    { group: 'Others (also personal project)', items: [
       { name: 'Rust', icon: 'devicon-rust-original', level: 72 },
       { name: 'C++', icon: 'devicon-cplusplus-plain', level: 56 },
       { name: 'Elixir', icon: 'devicon-elixir-plain', level: 52 },
