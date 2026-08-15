@@ -1,6 +1,7 @@
 // 3Lowz — Skills section (animated proficiency bars)
 const { SectionHeading: SHeading } = window.Ds3LowzDesignSystem_742f16;
 const { useState, useRef, useEffect: useEffectS } = React;
+const { SecurityStack } = window;
 
 function SkillBar({ item, index, inView }) {
   const filled = inView;
@@ -13,7 +14,7 @@ function SkillBar({ item, index, inView }) {
       <div style={{
         position: 'absolute', inset: '0 auto 0 0', height: '100%',
         width: filled ? item.level + '%' : '0%',
-        background: 'linear-gradient(90deg, var(--teal-tint2), var(--teal-tint))',
+        background: 'linear-gradient(90deg, color-mix(in srgb, var(--white) 65%, var(--teal-200)) 0px, var(--teal-400) 20px, var(--teal-700) 52px, var(--teal-700) 100%)',
         borderRight: '1.5px solid var(--accent)',
         boxShadow: filled ? '0 0 12px var(--accent-glow)' : 'none',
         transition: 'width 1s var(--ease-out)',
@@ -24,7 +25,17 @@ function SkillBar({ item, index, inView }) {
         position: 'relative', height: '100%', display: 'flex', alignItems: 'center',
         gap: 9, padding: '0 12px',
       }}>
-        <i className={`${item.icon} colored`} style={{ fontSize: '1.05rem' }} />
+        {item.iconBg ? (
+          <span style={{
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            width: 20, height: 20, borderRadius: 5, flexShrink: 0,
+            background: 'linear-gradient(135deg, var(--white), var(--slate-200))',
+          }}>
+            <i className={`${item.icon} colored`} style={{ fontSize: '0.82rem' }} />
+          </span>
+        ) : (
+          <i className={`${item.icon} colored`} style={{ fontSize: '1.05rem' }} />
+        )}
         <span style={{
           fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 500,
           letterSpacing: '0.02em', color: 'var(--text-primary)',
@@ -82,6 +93,10 @@ function Skills() {
             </div>
           </div>
         ))}
+      </div>
+      {/* TODO: fix full width below */}
+      <div style={{ display: 'grid', gap: 'var(--space-5)' }}> 
+        {/* <SecurityStack inView={inView} baseIndex={gi} /> */}
       </div>
     </section>
   );

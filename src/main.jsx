@@ -15,6 +15,7 @@ import '../ui_kits/portfolio/data.js';     // -> window.RESUME
 import '../ui_kits/portfolio/SideNav.jsx'; // -> window.SideNav
 import '../ui_kits/portfolio/Hero.jsx';    // -> window.Hero
 import '../ui_kits/portfolio/Skills.jsx';  // -> window.Skills
+import '../ui_kits/portfolio/SecurityStack.jsx'; // -> window.SecurityStack
 import '../ui_kits/portfolio/Experience.jsx'; // -> window.Experience
 
 const { SideNav, Hero, Skills, Experience } = window;

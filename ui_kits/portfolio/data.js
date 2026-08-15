@@ -23,6 +23,7 @@ window.RESUME = {
       { name: 'Rust', icon: 'devicon-rust-original', level: 72 },
       { name: 'C++', icon: 'devicon-cplusplus-plain', level: 56 },
       { name: 'Elixir', icon: 'devicon-elixir-plain', level: 52 },
+      { name: 'C#', icon: 'devicon-csharp-plain', level: 60 },
     ]},
     { group: 'Frontend', items: [
       { name: 'React', icon: 'devicon-react-plain', level: 99 },
@@ -32,14 +33,16 @@ window.RESUME = {
       { name: 'Webpack', icon: 'devicon-webpack-plain', level: 88 },
       { name: 'Rollup', icon: 'devicon-rollup-plain', level: 85 },
       { name: 'Backbone', icon: 'devicon-backbonejs-plain', level: 80 },
+      { name: 'Web Components', icon: 'bi bi-boxes', level: 75 },
     ]},
     { group: 'Web Frameworks', items: [
       { name: 'Fastify', icon: 'devicon-fastify-plain', level: 98 },
-      { name: 'Express', icon: 'devicon-express-original', level: 92 },
+      { name: 'Express', icon: 'devicon-express-original', level: 92, iconBg: true },
       { name: 'Django', icon: 'devicon-django-plain', level: 97 },
       { name: 'Flask', icon: 'devicon-flask-plain', level: 81 },
       { name: 'FastAPI', icon: 'devicon-fastapi-plain-wordmark', level: 82 },
       { name: 'Symfony', icon: 'devicon-symfony-original', level: 86 },
+      { name: 'Entity Framework', icon: 'devicon-entityframeworkcore-plain', level: 70, iconBg: true },
     ]},
     { group: 'Databases', items: [
       { name: 'MySQL', icon: 'devicon-mysql-plain', level: 97 },
@@ -47,12 +50,35 @@ window.RESUME = {
       { name: 'Mongo', icon: 'devicon-mongodb-plain', level: 85 },
       { name: 'Redis', icon: 'devicon-redis-plain', level: 87 },
     ]},
-    { group: 'Clouds & OS', items: [
+    { group: 'Cloud & DevOps', items: [
       { name: 'AWS', icon: 'devicon-amazonwebservices-plain-wordmark', level: 92 },
       { name: 'GCP', icon: 'devicon-googlecloud-plain', level: 87 },
       { name: 'Linux', icon: 'devicon-linux-plain', level: 100 },
       { name: 'macOS', icon: 'devicon-apple-plain', level: 100 },
       { name: 'Windows', icon: 'devicon-windows11-plain', level: 95 },
+      { name: 'Docker', icon: 'devicon-docker-plain', level: 92 },
+      { name: 'Kubernetes', icon: 'devicon-kubernetes-plain', level: 87 },
+      { name: 'Helm', icon: 'devicon-helm-original', level: 80 },
+    ]},
+  ],
+  securityStack: [
+    { team: 'Blue Team', theme: 'blue', items: [
+      { name: 'Kubernetes', icon: 'devicon-kubernetes-plain', level: 87 },
+      { name: 'Docker', icon: 'devicon-docker-plain', level: 92 },
+      { name: 'Nginx', icon: 'devicon-nginx-original', level: 89 },
+      { name: 'Linux Hardening', icon: 'devicon-linux-plain', level: 85 },
+    ]},
+    { team: 'Security', theme: 'security', items: [
+      { name: 'OAuth 2.0', icon: 'bi bi-shield-check', level: 84 },
+      { name: 'TLS/SSL', icon: 'bi bi-lock-fill', level: 81 },
+      { name: 'JWT', icon: 'bi bi-key-fill', level: 86 },
+      { name: 'OWASP', icon: 'bi bi-exclamation-triangle-fill', level: 79 },
+    ]},
+    { team: 'Red Team', theme: 'red', items: [
+      { name: 'Penetration Testing', icon: 'bi bi-crosshair', level: 72 },
+      { name: 'Vulnerability Assessment', icon: 'bi bi-bug-fill', level: 75 },
+      { name: 'Social Engineering', icon: 'bi bi-person-exclamation', level: 68 },
+      { name: 'Exploit Development', icon: 'bi bi-bomb', level: 65 },
     ]},
   ],
   experience: [
